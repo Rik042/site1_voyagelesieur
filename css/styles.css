@@ -1,11 +1,195 @@
-/*// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900
+/*----------------------------------------------------------------
+BASE
+------------------------------------------------------------------*/
 
-.roboto-<uniquifier> {
-  font-family: "Roboto", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}*/
+html{
+    box-sizing: border-box;
+}
+
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+
+/*----------------------------------------------------------------
+ÉLÉMENTS
+------------------------------------------------------------------*/
+
+.wrapper{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", serif;
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*----------------------------------------------------------------
+COMPONENTS
+------------------------------------------------------------------*/
+
+/*Header*/
+header{
+    background-color: #F26C25;
+    padding: 10px 0;
+}
+
+header .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    margin-right: 10px;
+}
+
+header p{
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+header a{
+    color: white;
+}
+
+header a:hover{
+    text-decoration: underline;
+}
+
+/*Section Banniere*/
+.banniere{
+    background-color: #EEEEEE ;
+}
+
+.banniere .wrapper{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 300;
+    letter-spacing: 7.2px;
+}
+
+/*Section Transport*/
+.titre-transport{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+
+    background-color: #EEEEEE;
+
+    border: 1px solid #D0D0D0;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+.transport h2{
+    margin-left: 20px;
+}
+
+.titre-transport img{
+    margin-right: 20px;
+}
+
+.conteneur-transport{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    margin-bottom: 80px;
+}
+
+article h3{
+    font-size: 36px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+article p{
+    text-align: center;
+    margin-top: 0;
+    
+}
+
+/*Footer*/
+footer{
+    background-color: black;
+    
+}
+
+footer a{
+    display: block;
+    width: 32px;
+    height: 32px;
+}
+
+.facebook a{
+    background-image: url("../images/facebook-nb.jpg");
+}
+
+.facebook a:hover{
+    background-image: url("../images/facebook-survol.jpg");
+}
+
+.twitter a{
+    background-image: url("../images/twitter-nb.jpg");
+}
+
+.twitter a:hover{
+    background-image: url("../images/twitter-survol.jpg");
+}
+
+.linkedin a{
+    background-image: url("../images/linkedin-nb.jpg");
+}
+
+.linkedin a:hover{
+    background-image: url("../images/linkedin-survol.jpg");
+}
+.pinterest a{
+    background-image: url("../images/pinterest-nb.jpg");
+}
+
+.pinterest a:hover{
+    background-image: url("../images/pinterest-survol.jpg");
+}
+
+footer ul{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    list-style: none;
+}
+h4{
+    color: white;
+}
+
+footer .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
