@@ -122,6 +122,10 @@ h1{
     margin-bottom: 80px;
 }
 
+.invisible{
+  opacity: 0;;  
+}
+
 article h3{
     font-size: 36px;
     font-weight: 300;
